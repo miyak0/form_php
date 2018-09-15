@@ -31,18 +31,16 @@
         echo "<option value='{$i}'>{$i}</option>";
       }
       ?>
-
-
       </select>
-    <select name="month"" id="" class="p-form__birthday__select">
-    <option value="month"" class="p-form__birthday__option">month</option>
+    <select name="month" id="" class="p-form__birthday__select">
+    <option value="month" class="p-form__birthday__option">month</option>
     <?php
       for ($i = 1; $i <= 12; $i++) {
         echo "<option value='{$i}'>{$i}</option>";
       }
       ?>
       </select>
-    <select name="day"" id="" class="p-form__birthday__select">
+    <select name="day" id="" class="p-form__birthday__select">
     <option value="day" class="p-form__birthday__option">day</option>
     <?php
       for ($i = 1; $i <= 31; $i++) {
