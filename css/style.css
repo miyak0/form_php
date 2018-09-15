@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
+body {
+  width: 960px;
+  margin: 0 auto;
+  padding: 30px;
+  color: #777;
+ font-family: Verdana,"游ゴシック Medium","Yu Gothic Medium","游ゴシック体",YuGothic,sans-serif;
+}
+
+/* formの部品設定 */
+input {
+  border: none;
+}
+
+.contact {
+  font-size: 40px;
+  text-align: center;
+}
+.contact a {
+  text-decoration: none;
+  color: #777;
+}
+form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* レイアウト変更 */
+.p-form,
+.l-wrap {
+    padding: 30px 50px;
+}
+.p-form__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.p-form__wrap__input {
+  position: relative;
+  margin-top: 35px;
+}
+.p-form_wrap:first-child{
+  margin-top: 0;
+}
+.p-form__input, .p-form__label {
+  transition: all .5s;
+  font-size: 16px;
+}
+.p-form__input {
+  width: 800px;
+  padding: .5em .5em .5em 3.5em;
+  border-bottom: 1px solid #707070;
+}
+.p-form__label {
+  position: absolute;
+  top: .7em;
+  left: .5em;
+  /* color: #777; */
+  line-height: 1;
+}
+input:focus {
+  padding-left: .5em;
+}
+input:focus + label {
+  top: -1.5em;
+}
+.p-form__birthday {
+  margin-top: 35px;
+  display: flex;
+  border-bottom: 1px solid #707070;
+  padding-bottom: 8px;
+}
+.p-form__birthday__ttl {
+  padding-left: 8px;
+  margin-right: 40px;
+}
+.p-form__birthday__select {
+  width: 100px;
+  height: 25px;
+  border: none;
+  margin-right: 40px;
+}
+.p-form__birthday__select:last-child {
+  margin-right: 0;
+}
+
+.p-form__comment {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+}
+.p-form__comment_ttl{
+  margin-left: 8px;
+}
+.p-form__comment__text{
+  margin-top: 10px;
+}
+.submit {
+  margin: 20px auto;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #707070;
+  transition: .5s
+}
+.submit:hover {
+  background: #707070;
+  color: #ddd;
+  transition: .5s
+}
+
+/* optinの右矢印を変える場合は */
+/* option {
+  background: url(../images/arrow.png) right 50% no-repeat;
+} */
+/* 上のようにbackgroundで右側をしてする */
+/* https://edge.sincar.jp/web/selectbox-appearance-customize/ */
+
+/* send_php */
+.p-form__sent {
+  width: 800px;
+  padding: .5em ;
+  border-bottom: 1px solid #707070;
+}
+.p-form__sent__right {
+  display: inline-block;
+  margin-right: 20px;
+}
+.p-form__sent__left {
+  display: inline-block;
+  margin-left: 10px;
+}
+.p-form__birthday__ymd {
+  margin-right: 25px;
+}
+
+.p-form__comment__sent {
+  margin-top: 15px;
+  padding: 10px 8px; 
+  line-height: 2em;
+}
